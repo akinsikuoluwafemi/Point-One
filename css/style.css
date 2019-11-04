@@ -1,0 +1,663 @@
+
+html {
+font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+     -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+  
+   box-sizing: border-box;
+}
+
+
+:root {
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6f42c1;
+--pink: #e83e8c;
+--red: #dc3545;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #28a745;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--gray: #868e96;
+--gray-dark: #343a40;
+--primary: #007bff;
+--secondary: #868e96;
+--success: #28a745;
+--info: #17a2b8;
+--warning: #ffc107;
+--danger: #dc3545;
+--light: #f8f9fa;
+--dark: #343a40;
+--font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+--font-family-monospace: "SFMono-Regular",Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+--poppins:'Poppins', sans-serif;
+}
+
+.wrapper {
+    padding-top: 2rem;
+   background-image: url('https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466_960_720.jpg');
+   background-size: cover;
+   background-position: center;
+
+}
+
+.header {
+    border: 1px solid transparent;
+    width: 80%;
+    margin: 3rem auto;
+    margin-bottom: 0;
+    background: rgb(205, 97, 89);
+    
+
+}
+
+
+.list {
+    display: grid; 
+    grid-template-columns: repeat(11,1fr);
+    /* justify-items: center; */
+    height: 4rem;
+    align-items: center;
+}
+
+.list-item {
+    list-style: none;
+}
+.zero {
+ grid-column: 1/2;
+}
+
+.one {
+    grid-column:  4 /5;
+}
+
+.six {
+    grid-column: 10/11;
+}
+
+
+.list-item-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: var(--font-family-sans-serif);
+    color: #ddd;
+    font-weight: bold;
+
+}
+.link {
+    font-family: cursive;
+    font-size: 2rem;
+    color: #fff !important;
+}
+
+/* hero */
+.hero {
+    padding-left: 12rem;
+    padding-top: 20rem;
+    font-size: 2.4rem;
+    margin: 0 auto;
+   color: white;
+    font-family: var(--font-family-monospace);
+     
+}
+.hero > *{
+    padding-bottom: 3rem;
+}
+.num {
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+}
+
+
+.hero-number {
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+.hero-text {
+    font-weight: 100;
+}
+
+.hero-link {
+    text-decoration: none;
+    color: white;
+    padding: 2rem 7rem;
+    display: inline-block;
+    border: 1px solid red;
+    margin-top: 1rem;
+    margin-bottom: 20rem;
+
+}
+
+/* display */
+.display {
+    display:grid;
+    margin-top: -4rem;
+    grid-template-columns: repeat(11,1fr);
+    justify-content: space-between;
+    justify-items: center;
+    margin-bottom: 18rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    
+    
+
+}
+
+
+.d {
+    width: 16rem;
+    height: 16rem;
+}
+
+.display-food {
+    margin-left: 2rem;
+}
+.display-food:hover {
+    transform: translateY(-2rem);
+    transition: all .3s cubic-bezier(.17,.67,.83,.67);
+
+
+/* 
+    -webkit-transition: all 0.25s .15 ease-in-out;
+    -moz-transition: all 0.25s .15 ease-in-out;
+    -ms-transition: all 0.25s .15 ease-in-out;
+    -o-transition: all 0.25s .15 ease-in-out;
+    transition: all 0.25s .15 ease-in-out;
+    cursor: pointer; */
+
+}
+.display-text {
+    text-align: center;
+    background: red;
+    padding: 2rem;
+    margin-top: -1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: var(--font-family-monospace);
+    font-weight: bold;
+}
+
+
+
+/* authors section */
+
+.authors-section {
+    margin-top: -7rem;
+}
+
+.all-authors {
+    display: flex;
+     /* margin-left: 10rem;
+    margin-right: 10rem; */
+    justify-content: center;
+
+}
+
+.all-authors > * {
+    margin-left: 2rem;
+}
+
+.authors-wrapper {
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: var(--font-family-monospace);
+}
+
+
+.author-text {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.author-image {
+height: 23.3rem;
+width: 16rem;
+}
+.author-image:hover {
+    transform: translateY(-2rem);
+    transition: all .3s cubic-bezier(.17,.67,.83,.67);
+}
+
+
+.author-image-wrapper img {
+    width: 16rem;
+    height: 16rem;
+    border-radius: .8rem;
+}
+
+.author-name {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: var(--font-family-sans-serif);
+}
+
+.recipe-number {
+    text-align: center;
+    color: #999;
+    font-size: 1.2rem;
+
+
+}
+
+.show {
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-family: var(--font-family-sans-serif);
+    color: #000;
+    background: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 21rem;
+    border-radius: 3rem;
+    display: block;
+    margin-top: 2rem;
+    color: white;
+    cursor: pointer;
+    
+}
+
+
+/* download */
+.download {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding: 10rem 0;
+    font-size: 1.3rem;
+    font-family: var(--poppins);
+  
+}
+
+.download p{
+    font-size: 2rem;
+}
+
+p > span {
+    color: #bbb;
+}
+
+.download-icon {
+    background: black;
+    padding: 1rem 0;
+    border-radius: 3rem;
+    width: 20rem;
+    border: 1px solid white;
+}
+
+.download-icon:first-of-type {
+    background: #F44235;
+    color: white;
+}
+.ap {
+    color: white;
+
+}
+.play {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.google {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+
+
+}
+
+.apple{
+    text-decoration: none;
+    color: white;
+
+}
+
+
+/* image-section */
+.image-section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+
+.inst img {
+    height: 22rem;
+    width: 21.4rem;
+}
+
+.footer {
+    background: black;
+    margin-top: 10rem;
+    padding: 5rem;
+}
+
+
+.copyright {
+    display: flex;
+
+}
+
+
+.copyright-text {
+    margin-right: auto;
+    font-size: 1.5rem;
+    font-family: var(--poppins);
+    color: white;
+}
+
+.copyright-logo {
+    display: flex;
+    align-items: center;
+}
+.copyright-logo > * {
+    margin-right: 1rem;
+}
+
+
+.power {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--poppins);
+    color: white;
+
+}
+
+
+
+/* Add a recipe page */
+
+.recipe-form {
+    /* margin-left: 10rem;
+    margin-right: 10rem; */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.recipe-form > * {
+    margin-bottom: 2rem;
+
+}
+
+.recipe-title-wrapper {
+
+}
+
+
+.recipe-title-input {
+    width: 100%;
+    max-width: 100%;
+    padding: .5rem;
+    font-size: 1.6rem;
+}
+input[type="text"]::-webkit-input-placeholder {
+    color: #bbb;
+}
+
+.add-author-wrapper {
+
+}
+
+label {
+    font-size: 1.5rem;
+    color: white;
+    font-family: var(--font-family-monospace);
+}
+
+.category-wrapper {
+
+}
+
+
+.add-category {
+    width: 100%;
+    max-width: 100%;
+    padding: .5rem;
+    height: 3rem;
+    font-size: 1.5rem;
+
+    
+
+}
+
+
+
+input[type="submit"]{
+    padding: .5rem;
+    text-align: center;
+}
+
+.recipe-id-wrapper{
+
+}
+
+.submit {
+    /* width: 91.5%; */
+    width: 100%;
+    max-width: 100%;
+    color: white;
+    background: #474646;
+    background: rgb(84, 177, 84);
+    border: none;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+/* table */
+.table {
+    width: 100%;
+    max-width: 100%;
+    /* border: 1px solid white; */
+    font-size: 2rem;
+    margin: 0 auto;
+    color: white;
+    font-family: var(--poppins);
+  letter-spacing: 1px;
+
+}
+
+
+
+thead {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-family: cursive;
+}
+
+thead th, tfoot th, tfoot td {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  border: 3px solid rgb(171, 110, 110);
+}
+
+
+ tr:nth-child(odd) {
+  background-color: #666;
+}
+
+tr:nth-child(even) {
+  background-color: #bbb;
+} 
+
+
+.delete {
+    text-align: center;
+}
+
+
+
+
+
+
+/* searchrecipe page */
+
+
+
+body {
+  line-height: 1.5;
+}
+
+
+
+.wrap {
+  color: #222;
+  font-size: 2.4rem;
+}
+
+
+
+
+.clip-each {
+  display: block;
+  position: relative;
+  -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  /* -webkit-clip-path: url("#hexagon-clip"); */
+  /* clip-path: url("#hexagon-clip"); */
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin: 0 auto;
+}
+
+a.clip-each:hover {
+  background: #9E566E;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+.clip-solid {
+  width: 14rem;
+  height: 14rem;
+  background-image: url("../images/instgram-4.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #ad6996;
+  background-blend-mode: hard-light;
+  -webkit-transition: all 2.5s linear;
+  transition: all 2.5s linear;
+  margin: 0;
+}
+
+.clip-solid:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
+  clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
+  -webkit-clip-path: url("#triangle-clip");
+  clip-path: url("#triangle-clip");
+  background: #9E566E;
+  z-index: 1;
+  width: 100%;
+  height: 7.3rem;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  pointer-events: none;
+}
+
+.clip-solid:hover:after {
+  height: 0;
+  -webkit-transition: all 0.45s ease-in;
+  transition: all 0.45s ease-in;
+}
+
+
+.social-share-block {
+  position: absolute;
+  bottom: 1.3rem;
+  right: 3rem;
+  color: #fff;
+  font-size: 60%;
+  z-index: 2;
+  font-family: var(--poppins)
+}
+
+.social-each {
+  font-size: 90%;
+}
+
+.clip-svg {
+    height: 0;
+    width: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
